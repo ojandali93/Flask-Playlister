@@ -17,5 +17,8 @@
         </form></p>
     </div>
     {% include 'partials/comment_form.html' %}
+    {% with comments=comments %}
+      {% include "partials/comment.html" %}
+    {% endwith %}
 </div>
 {% endblock %}
